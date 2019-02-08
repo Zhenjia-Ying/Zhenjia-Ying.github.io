@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title> ESSE 4600 Course Description </title>
+		<script>
+			function getNameEmail() { <!-- creates the function getNameEmail-->
+				var newName = document.getElementById('name').value;
+				var newEmail = document.getElementById('email').value;
+				document.getElementById('obtainName').innerHTML = alert(newName + " - " + newEmail); 
+				<!-- alert above will show a popup with both the input name and email -->
+			}
+			
+		</script>
+			<!-- styles the table  --> 
+			<style>
+			table, th, td {
+			border: 1px solid black;<!-- creates one pixel borders for the table -->
+			border-collapse:collapse;
+			}
+			</style>
+			
+			<style>
+				img { width: 100%; }	
+			</style>
+	</head>
+	
+	<body>
+		
+		<h2> ESSE 4600 - Geographical Information Systems (GIS) and Data Integration </h2> <!-- Name of the course -->
+		
+		<h3 style="background-color:powderblue;"><!-- changes the background color to powderblue--> About The Course </h3> 
+		
+		<p> ESSE 4600 is a project-oriented geomatics course. The course uses GIS systems such as ArcGIS, and mathematical techniques such as map algebraic to integrate diverse datasets. </p>
+		<!-- Cited from the course description website:
+		"https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/crsq?fa=LE&sj=ESSE&cn=4600&cr=3.00&ay=2018&ss=FW " -->
+		
+		<p> <img src="Earth.jpg" style="width:300px;height:300px"> </p>
+		<!-- image obtained from the website: http://time.com/3964653/nasa-earth-photo/ -->
+		
+		<h3 style="background-color:powderblue;"> Courses Timetable</h3>
+		<p>Timetable for the course: </p>
+		<!-- Creates the table -->
+		<table>
+		
+			<!-- Creates the headings for the table -->
+			<tr>
+			<th> Type </th>
+			<th> Day </th>
+			<th> Start Time </th>
+			<th> Duration </th>
+			<th> Location </th>
+			<th> Instructor </th>
+			</tr>
+			
+			<tr>
+			<th> Lecture </th>
+			<th> Tuesday </th>
+			<th> 11:00 </th>
+			<th> 2 hours </th>
+			<th> Calumet College Room 109 </th>
+			<th> Gunho Sohn </th>
+			</tr>
+			
+			
+			<tr>
+			<th style="color:red;"> <!-- changes the color of the words to red -->Lab </th> 
+			<th style="color:red;"> Thursday </th>
+			<th style="color:red;"> 9:00 </th>
+			<th style="color:red;"> 2 hours </th>
+			<th style="color:red;"> Petrie Science Building Room 020 </th>
+			<th style="color:red;"> Afnan Ahmad </th>
+			</tr>
+			
+			<tr> 
+			<th colspan="3"> Additional Information: </th>
+			<th colspan="3"> Conflicts of schedule may occur with the labs. </th>
+			<tr>
+		</table>
+		
+		<p> For more information, please visit the course description
+		<a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/crsq?fa=LE&sj=ESSE&cn=4600&cr=3.00&ay=2018&ss=FW"> website. </a> </p>
+		
+		<h3 style="background-color:powderblue;"> Prerequisites </h3>
+		<p> One of: </p>
+		<font face="verdana"> LE/ESSE 3600 3.00, AP/GEOG 3180 3.00 or SC/GEOG 3180 3.00, AP/GEOG 4340 3.00 or SC/GEOG 4340 3.00, ES/ENVS 3520 3.00, ES/ENVS 4520 3.00, </font> <br>
+		<!-- changes the font for all the courses to verdana-->
+		<p> or permission of the Instructor.</p>
+		
+		<h3 style="background-color:powderblue;"> Subscribe to Course Newsletter </h3>
+		<p>To receive updates to the course information, enter in your name and email below!</p>
+		
+		Name:<br>
+		<input type="text" id="name"><br> <!-- provides input to enter the name -->
+		Email:<br>
+		<input type="text" id="email"><br> <!-- provides input to enter the email -->
+		<button type="button" onclick="getNameEmail()"> Submit </button><!-- creates the submit button -->
+		
+	</body>
+</html>
